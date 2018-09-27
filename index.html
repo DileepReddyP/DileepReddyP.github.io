@@ -24,13 +24,12 @@ var video = document.getElementById('video');
 
 // Trigger photo take
 document.getElementById("snap").addEventListener("click", function() {
-	context.drawImage(video, 0, 0, 640, 480);
-}
-function convertCanvasToImage(canvas) {
+	context.drawImage(video, 0, 0, 640, 480);});
+	function convertCanvasToImage(canvas) {
 	var image = new Image();
 	image.src = canvas.toDataURL("image/octet-stream");
 	return image;
-});
+	}
   </script>
 </body>
 </html>
