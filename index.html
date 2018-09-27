@@ -27,7 +27,7 @@ document.getElementById("snap").addEventListener("click", function() {
 	context.drawImage(video, 0, 0, 640, 480);});
 function convertCanvasToImage(canvas) {
 	var image = new Image();
-	image.src = canvas.toDataURL("image/octet-stream");
+	image.src = canvas.toDataURL("image/png");
 	return image;
 	}	
   </script>
