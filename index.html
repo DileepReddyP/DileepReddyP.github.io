@@ -5,6 +5,7 @@
 <p>I'm hosted with GitHub Pages.</p>
 <video id="player" controls autoplay></video>
 <button id="capture">Capture</button>
+  <a id="dl-btn" href="#" download="glorious_selfie.png">Save Photo</a>
 <canvas id="canvas" width=320 height=240></canvas>
 <script>
   const player = document.getElementById('player');
@@ -26,6 +27,17 @@
     .then((stream) => {
       player.srcObject = stream;
     });
+ function takeSnapshot(){
+
+    //...
+
+    // Get an image dataURL from the canvas.
+    var imageDataURL = hidden_canvas.toDataURL('image/png');
+
+    // Set the href attribute of the download button.
+    document.querySelector('#dl-btn').href = imageDataURL;
+}
+  
 </script>
 </body>
 </html>
