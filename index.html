@@ -32,7 +32,7 @@
     //...
 
     // Get an image dataURL from the canvas.
-    var imageDataURL = hidden_canvas.toDataURL('image/png');
+    var imageDataURL = canvas.toDataURL('image/png');
 
     // Set the href attribute of the download button.
     document.querySelector('#dl-btn').href = imageDataURL;
