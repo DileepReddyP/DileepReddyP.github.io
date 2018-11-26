@@ -7,6 +7,18 @@
 <button id="capture">Capture</button>
   <a id="dl-btn" href="#" download="glorious_selfie.jpg">Photo</a>
 <canvas id="canvas" width=320 height=240></canvas>
+<br>
+<button id="connect" type="button">Connect</button>
+
+<button id="disconnect" type="button">Disconnect</button>
+
+<div id="terminal"></div>
+
+<form id="send-form">
+    <input id="input" type="text">
+    <button type="submit">Send</button>
+</form>
+
 <script>
   const player = document.getElementById('player');
   const canvas = document.getElementById('canvas');
@@ -39,5 +51,6 @@
 }
   
 </script>
+<script src="main.js"></script>
 </body>
 </html>
