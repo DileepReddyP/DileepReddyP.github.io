@@ -120,8 +120,8 @@ function receive(data) {
 }
 
 function log(data, type = '') {
-  terminalContainer.insertAdjacentHTML('beforeend',
-      '<div>' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>');
+  terminalContainer.innerHTML=
+      '<div>' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>';
 }
 
 function disconnect() {
