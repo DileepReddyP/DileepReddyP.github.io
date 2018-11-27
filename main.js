@@ -121,7 +121,7 @@ function receive(data) {
 
 function log(data, type = '') {
   terminalContainer.innerHTML=
-      '<div>' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>';
+      '<div>' + data + '</div>';
 }
 
 function disconnect() {
