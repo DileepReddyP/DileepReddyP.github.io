@@ -117,6 +117,10 @@ function handleCharacteristicValueChanged(event) {
 
 function receive(data) {
   log(data, 'in');
+  if(data>20)
+  {
+   context.drawImage(player, 0, 0, canvas.width, canvas.height); 
+  }
 }
 
 function log(data, type = '') {
